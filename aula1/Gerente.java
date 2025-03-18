@@ -10,11 +10,11 @@ public class Gerente extends Funcionario {
         this.numeroFuncionariosGerenciados = 0;
     }
 
-    public boolean autenticar(int senha){
+    public boolean autenticar(int senha) {
         if (this.senha == senha) {
             System.out.println("Senha correta!!!");
             return true;
-        }else{
+        } else {
             System.out.println("Senha Incorreta!!!");
             return false;
         }

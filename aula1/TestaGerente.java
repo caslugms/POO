@@ -8,9 +8,11 @@ public class TestaGerente {
 
     public static void main(String[] args) {
         Gerente gerente01 = new Gerente();
-        gerente01.setNome("Lucas");
-        gerente01.setSenha(1234);
-        gerente01.autenticar(2563);
+        Funcionario funcionario = gerente01;
 
+        Funcionario funcionarioDiretor = gerente01;
+
+        Gerente ger = new Gerente();
+        funcionarioDiretor = ger;
     }
 }

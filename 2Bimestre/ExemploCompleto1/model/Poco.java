@@ -1,3 +1,5 @@
+package model;
+
 public class Poco {
     private String codigo;
     private String localizacao;

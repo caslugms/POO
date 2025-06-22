@@ -1,3 +1,4 @@
+package model;
 public class Administrador implements Usuario {
     private String nome;
 

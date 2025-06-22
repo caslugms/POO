@@ -4,7 +4,7 @@ import controller.AnaliseController;
 
 import java.time.LocalDate;
 
-public class Main {
+public class MainProjeto {
     public static void main(String[] args) {
         Poco p1 = new Poco("P001", "Zona Norte");
         Poco p2 = new Poco("P002", "Zona Sul");

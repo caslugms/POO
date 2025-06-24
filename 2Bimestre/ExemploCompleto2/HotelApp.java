@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class HotelApp {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        ReservaController controller = new ReservaController();
+        Controller controller = new Controller();
 
         try {
             System.out.print("Digite o nome do cliente: ");

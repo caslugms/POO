@@ -1,4 +1,5 @@
-public public class ReservaController{
+
+public public class Controller{
     
         public double calcularPreco(Reserva reserva) {
             double precoBase;
@@ -21,7 +22,4 @@ public public class ReservaController{
         Integer quantidade = reserva.getNumeroHospedes();
         return precoBase * quantidade;
     }
-}
- {
-    
 }

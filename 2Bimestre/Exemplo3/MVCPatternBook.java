@@ -3,31 +3,35 @@ import java.util.List;
 
 public class MVCPatternBook {
     public static void main(String[] args) {
-        Publisher editora = new Publisher("Editora Vida", "São Paulo");
+        Publisher editora = new Publisher("Editora IFPR", "Cascavel");
 
-        Book livro = new Book("Java Básico", "Maria Silva", 300, BookCategory.TECHNOLOGY, editora);
+        Book livro = new Book("Prova Primeiro Bimestre", "Odair Moreira de Souza", 100, BookCategory.TECHNOLOGY, editora);
+
         BookView view = new BookView();
         BookController controller = new BookController(livro, view);
 
-        System.out.println("📘 Dados do livro original:");
+        System.out.println("Dados do livro original: ");
         controller.updateView();
 
-        // Alterando dados
-        controller.setBookTitle("Java Avançado");
-        controller.setBookAuthor("Carlos Souza");
+        controller.setBookTitle("Prova Segundo Bimestre");
+        controller.setBookAuthor("Ricardo da Rosa");
         controller.addExtraPages(50);
         controller.setBookCategory(BookCategory.SCIENCE);
 
-        System.out.println("\n📗 Dados do livro atualizados:");
+        System.out.println();
+        System.out.println("Dados do livro atualizados: ");
         controller.updateView();
 
-        // Criando bibliotecário
-        List<Book> livrosDoBib = new ArrayList<>();
-        livrosDoBib.add(livro);
-        livrosDoBib.add(new Book("História do Mundo", "Ana Costa", 150, BookCategory.HISTORY, editora));
+        List<Book> listaLivros = new ArrayList<>();
 
-        Librarian bib = new Librarian("Joana", livrosDoBib);
-        System.out.println("\n📚 Listando livros do bibliotecário:");
+        listaLivros.add(livro);
+
+        listaLivros.add(new Book("As aventuras de Lucas", "Lucas Gabriel Machado da Silva", 200, BookCategory.HISTORY, editora));
+
+        Librarian bib = new Librarian("Livraria da Taynara", listaLivros);
+
+        System.out.println();
+        System.out.println("Livros disponíveis na biblioteca: ");
         bib.listBooks();
     }
 }

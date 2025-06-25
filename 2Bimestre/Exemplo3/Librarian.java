@@ -10,9 +10,9 @@ public class Librarian {
     }
 
     public void listBooks() {
-        System.out.println("Livros do bibliotecário " + name + ":");
-        for (Book book : books) {
-            System.out.println("- " + book.getTitle());
+        System.out.println("Livros diponíveis na biblioteca " + name + " :");
+        for (int i = 0; i < books.size(); i++) {
+            System.out.println(books.get(i).getTitle());
         }
     }
 }

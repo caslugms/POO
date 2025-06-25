@@ -1,0 +1,3 @@
+public enum BookCategory {
+    SCIENCE, LITERATURE, HISTORY, TECHNOLOGY, FICTION, OTHER
+}

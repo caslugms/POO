@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+/*import java.util.ArrayList;
 
 public class Loja {
     private String nome;
@@ -44,4 +44,4 @@ public class Loja {
     }
 
 
-}
+}*/

@@ -1,3 +1,3 @@
-public class Categoria {
-    
+public enum Categoria{
+    ELETRONICOS, BRINQUEDOS, ROUPAS, ALIMENTOS, BEBIDAS, HIGIENE, LIVROS, MOVELARIA, ELETRODOMESTICOS;
 }

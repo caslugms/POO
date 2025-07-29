@@ -41,4 +41,8 @@ public class Carrinho {
             total += produtos.get(i).getPreco();
         }
     }
+
+    public ArrayList<Produto> getListaProdutos(){
+        return produtos;
+    }
 }
